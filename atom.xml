@@ -4,7 +4,7 @@
   <title><![CDATA[性愛情報室]]></title>
   <link href="http://wweenn.github.com/atom.xml" rel="self"/>
   <link href="http://wweenn.github.com/"/>
-  <updated>2012-11-25T13:21:47+08:00</updated>
+  <updated>2012-11-25T15:32:25+08:00</updated>
   <id>http://wweenn.github.com/</id>
   <author>
     <name><![CDATA[wweenn]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[State of business]]></title>
+    <link href="http://wweenn.github.com/blog/state-of-business/"/>
+    <updated>2012-11-25T13:58:00+08:00</updated>
+    <id>http://wweenn.github.com/blog/state-of-business</id>
+    <content type="html"><![CDATA[<p><strong>作者在苦寫網站中</strong></p>
+]]></content>
+  </entry>
   
 </feed>
