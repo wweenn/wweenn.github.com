@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "State of business"
-date: 2012-11-25 13:58
+title: "營業狀態" 
 comments: true
-categories: 
+categories: state
 ---
 
-**作者在苦寫網站中**
+> 休息中
 
-ROCK WITH YOU by MICHAEL JACKSON
-<iframe width="360" height="240" src="http://www.youtube.com/embed/5X-Mrc2l1d0" frameborder="0" allowfullscreen></iframe>
- 
+Place: [Location][]
+
+
+
+[location]: http://maps.google.com/		"地點" 
