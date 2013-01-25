@@ -12,6 +12,4 @@ categories: state
 Place: [Location][]  
 Ticket:	?  
 
-<http://twitter.com/wweenn>  
-
 [location]: http://maps.google.com/maps?q=台中市 "地點" 
