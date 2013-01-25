@@ -48,9 +48,9 @@ module Jekyll
 
     def initialize(tag_name, markup, tokens)
       @opts = {}
-      if markup.strip =~ /\s*counter:(\w+)/i
+      if markup.strip =~ /\s*counter:(\w+)/iu
         @opts['counter'] = ($1 == 'true')
-        markup = markup.strip.sub(/counter:\w+/i,'')
+        markup = markup.strip.sub(/counter:\w+/iu,'')
       end
       super
     end
@@ -69,7 +69,7 @@ module Jekyll
 
       html = ''
       lists.each do | category, counter |
-        url = category_dir + category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+        url = category_dir + category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-').downcase
         style = "font-size: #{100 + (60 * Float(counter)/max)}%"
         html << "<a href='#{url}' style='#{style}'>#{category}"
         if @opts['counter']
@@ -85,9 +85,9 @@ module Jekyll
 
     def initialize(tag_name, markup, tokens)
       @opts = {}
-      if markup.strip =~ /\s*counter:(\w+)/i
+      if markup.strip =~ /\s*counter:(\w+)/iu
         @opts['counter'] = ($1 == 'true')
-        markup = markup.strip.sub(/counter:\w+/i,'')
+        markup = markup.strip.sub(/counter:\w+/iu,'')
       end
       super
     end
@@ -98,7 +98,7 @@ module Jekyll
       category_dir = config['root'] + config['category_dir'] + '/'
       categories = context.registers[:site].categories
       categories.keys.sort_by{ |str| str.downcase }.each do |category|
-        url = category_dir + category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+        url = category_dir + category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-').downcase
         html << "<li><a href='#{url}'>#{category}"
         if @opts['counter']
           html << " (#{categories[category].count})"
