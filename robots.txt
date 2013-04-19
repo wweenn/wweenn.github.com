@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://wweenn.github.com/sitemap.xml 
+Sitemap: http://wweenn.cc/sitemap.xml 
